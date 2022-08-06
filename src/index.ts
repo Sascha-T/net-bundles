@@ -79,7 +79,7 @@ export function readBundleHeader(file: ArrayBuffer): BundleHeader {
     }
 }
 
-export function readFile(file: ArrayBuffer, entry: FileEntry): ArrayBuffer {
+export function readFile(file: ArrayBuffer, entry: FileEntry, inflateRawSync?: any): ArrayBuffer {
     let decomp = entry.CompressedSize != 0
     let size = decomp ? entry.CompressedSize : entry.Size
     let data = new ArrayBuffer(size);
