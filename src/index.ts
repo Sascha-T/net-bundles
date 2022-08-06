@@ -1,6 +1,4 @@
 import {BundleHeader, FileEntry, SIGNATURE} from "./types";
-import {readFileSync, writeFileSync} from "fs";
-import {inflateRawSync} from "zlib";
 
 namespace Header {
     export function findHeaderOffset(file: ArrayBuffer): number {
