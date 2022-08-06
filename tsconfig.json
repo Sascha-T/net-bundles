@@ -6,7 +6,7 @@
     "outDir": "dist",
     "libs": ["es2020"]
   },
-  "files": [
+  "include": [
     "src/**/*.ts"
   ],
   "exclude": [
