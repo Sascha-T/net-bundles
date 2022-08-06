@@ -1,5 +1,5 @@
 {
-  "name": "net-bundle",
+  "name": "net-bundles",
   "version": "1.0.0",
   "main": "dist/index.js",
   "author": "Sascha T. <info@sascha-t.de>",
@@ -7,8 +7,10 @@
   "scripts": {
     "postinstall": "tsc"
   },
-  "devDependencies": {
-    "@types/node": "^18.6.4",
+  "dependencies": {
     "typescript": "^4.7.4"
+  },
+  "devDependencies": {
+    "@types/node": "^18.6.4"
   }
 }
