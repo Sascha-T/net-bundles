@@ -90,5 +90,5 @@ export function readFile(file: ArrayBuffer, entry: FileEntry, inflateRawSync?: a
         to[i - entry.Offset] = from[i]
     if(decomp)
         to = inflateRawSync(to);
-    return to;
+    return to.buffer;
 }
